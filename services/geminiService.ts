@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from '@google/genai';
 import type { AIFeedback, AIErrorExplanation, MultipleChoiceExercise } from '../types';
 
 // Use the environment variable strictly as required by the instructions.
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenerativeAI(import.meta.env.VITE_GOOGLE_API_KEY);
 
 const DEFAULT_MODEL = "gemini-3-flash-preview";
 
