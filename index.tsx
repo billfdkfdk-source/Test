@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App'; 
+import './index.css';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
-  throw new Error("Could not find root element to mount to");
+  throw new Error("找不到 root 节点，请检查 index.html");
 }
 
 const root = ReactDOM.createRoot(rootElement);
